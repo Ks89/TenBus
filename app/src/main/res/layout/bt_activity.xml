@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bluetoothRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/leftRelativeLayout"
+        android:layout_width="500dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/pairedDevicesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="6dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/newDevicesDevicesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignStart="@+id/pairedDevicesRecyclerView"
+            android:layout_below="@+id/newDevicesTextView"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/newDevicesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/pairedDevicesRecyclerView"
+            android:layout_below="@+id/pairedDevicesRecyclerView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="80dp"
+            android:text="Tablet trovati"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/holo_orange_dark" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="50dp"
+            android:text="Tablet accoppiati"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/holo_orange_dark" />
+
+        <Button
+            android:id="@+id/scanButton"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignBottom="@+id/newDevicesTextView"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@+id/newDevicesTextView" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
